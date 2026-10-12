@@ -1,0 +1,26 @@
+{
+  "name": "days-since",
+  "displayName": "Days Since",
+  "description": "Calculate the number of days between a date you enter and today.",
+  "version": "0.0.1",
+  "publisher": "nguyenngocbinh",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:daysSince.calculate"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "daysSince.calculate",
+        "title": "Days Since: Calculate Days Until Today"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "daysSince.calculate",
+        "key": "ctrl+alt+d",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
+}
